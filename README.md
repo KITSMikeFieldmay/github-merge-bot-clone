@@ -1,10 +1,10 @@
 
-###Notes
+### Notes
 
 example launch command:
-
+```bash
 GITHUB_MERGE_BOT_OWNER=KITSAdmin GITHUB_MERGE_BOT_REPO=bot-test GITHUB_MERGE_BOT_USERNAME=KITSMergeBotDepep GITHUB_MERGE_BOT_PASSWORD=xxxBotPassxxx lein run
-
+```
 Functionality:
 
 - It will merge by rebase if everything is ok
