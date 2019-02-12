@@ -1,3 +1,25 @@
+
+###Notes
+
+example launch command:
+
+GITHUB_MERGE_BOT_OWNER=KITSAdmin GITHUB_MERGE_BOT_REPO=bot-test GITHUB_MERGE_BOT_USERNAME=KITSMergeBotDepep GITHUB_MERGE_BOT_PASSWORD=xxxBotPassxxx lein run
+
+Functionality:
+
+- It will merge by rebase if everything is ok
+- It will before merging rebase if needed (branch out of date), wait for all checks to pass
+- It will check PRs with label 'readyForBot' and not 'rejectedFromQueue'
+- It will add 'rejectedFromQueue' if branch has conflicts or is in failure state. By adding 'rejectedFromQueue' PR will release place in the queue and be ignored until fixed and 'rejectedFromQueue' will be manually removed
+
+Problems:
+
+Sometimes after killing the bot and restarting, bot  was giving an error :
+'on: Checkout conflict with files: '.
+
+To solve this just remove temp folder (bot repo checkout)
+
+
 # github-merge-bot
 
 Automates the process of merging pull requests and keeping them up-to-date.
