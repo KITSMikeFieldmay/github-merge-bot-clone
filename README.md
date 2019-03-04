@@ -45,7 +45,7 @@ Another approach people have taken is to automate the process of updating PRs. T
 * Easy to deploy
   * Preferably it doesn't require a database
 
-Before creating github-merge-bot, we considered the these projects:
+Before creating github-merge-bot, we considered these projects:
 
 * [Bulldozer](https://github.com/palantir/bulldozer)
   * \+ Project seems well supported
@@ -84,7 +84,7 @@ github-merge-bot is written in [Clojure](https://clojure.org/). To run it locall
 
 * Java 8 – I recommend using Java 8, I've not tried using later versions. [jEnv](http://www.jenv.be) is a useful tool to manage multiple versions of Java on your system.
 * [Clojure](https://clojure.org/guides/getting_started)
-* [Leinignen](https://leiningen.org/) – The de facto build tool for Clojure
+* [Leiningen](https://leiningen.org/) – The de facto build tool for Clojure
 
 ### Running locally
 
